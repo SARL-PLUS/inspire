@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>INSPIRE — Intelligent Novel Support for Personalized Instruction and Robust Evaluation</title>
+  <meta name="description" content="INSPIRE entwickelt ein KI-gestütztes Diagnosetool für den MINT-Unterricht an der Primarstufe. Das Tool analysiert offene Schüler*innenantworten und unterstützt Lehrkräfte bei der individuellen Förderung.">
+  <link rel="icon" type="image/svg+xml" href="assets/img/logo-icon.svg">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+  <!-- ═══ Announcement Bar ═══ -->
+  <div class="announcement-bar">
+    <strong>🎓 WISS-Projekt:</strong> Gefördert durch das Land Salzburg — Schwerpunkt Bildung &amp; Talente / ICT-Digital
+  </div>
+
+  <!-- ═══ Header ═══ -->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#" class="nav-logo">
+        <img src="assets/img/logo-inspire.svg" alt="INSPIRE Logo">
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="active">Startseite</a></li>
+        <li><a href="#about">Über INSPIRE</a></li>
+        <li><a href="#challenges">Herausforderungen</a></li>
+        <li><a href="#workpackages">Arbeitspakete</a></li>
+        <li><a href="#team">Projektteam</a></li>
+        <li><a href="#partners">Partner</a></li>
+        <li><a href="#timeline">Zeitplan</a></li>
+        <li><a href="#contact">Kontakt</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Menü öffnen">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- ═══ Hero Section ═══ -->
+  <section class="hero section-padding" id="home">
+    <canvas id="particles-canvas"></canvas>
+    <div class="container hero-inner">
+      <div class="hero-content reveal">
+        <div class="hero-badge">Forschungsprojekt Okt. 2025 – Sep. 2028</div>
+        <h1>
+          KI-gestützte <span>Diagnose &amp; Förderung</span> im MINT-Unterricht
+        </h1>
+        <p class="hero-subtitle">
+          INSPIRE entwickelt ein KI-gestütztes Diagnosetool, das Volksschullehrkräfte dabei unterstützt, 
+          Fehlvorstellungen in Mathematik und Sachunterricht frühzeitig zu erkennen und gezielt darauf zu reagieren.
+        </p>
+        <div class="hero-buttons">
+          <a href="#about" class="btn btn-primary">
+            <i data-lucide="info" style="width:18px;height:18px;"></i>
+            Mehr erfahren
+          </a>
+          <a href="#contact" class="btn btn-outline">
+            <i data-lucide="mail" style="width:18px;height:18px;"></i>
+            Kontakt
+          </a>
+        </div>
+        <div class="hero-stats">
+          <div class="hero-stat">
+            <div class="hero-stat-value">3</div>
+            <div class="hero-stat-label">Jahre Laufzeit</div>
+          </div>
+          <div class="hero-stat">
+            <div class="hero-stat-value">4</div>
+            <div class="hero-stat-label">Partnerschulen</div>
+          </div>
+          <div class="hero-stat">
+            <div class="hero-stat-value">5</div>
+            <div class="hero-stat-label">Arbeitspakete</div>
+          </div>
+          <div class="hero-stat">
+            <div class="hero-stat-value">MINT</div>
+            <div class="hero-stat-label">Primarstufe</div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-image reveal">
+        <img src="assets/img/hero-teacher.png" alt="Lehrkraft nutzt KI-gestütztes Diagnosetool im MINT-Unterricht">
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ About Section ═══ -->
+  <section class="about section-padding" id="about">
+    <div class="container">
+      <h2 class="section-title reveal">Was ist <span>INSPIRE</span>?</h2>
+      <div class="section-divider"></div>
+      <p class="section-subtitle reveal">
+        Intelligent Novel Support for Personalized Instruction and Robust Evaluation in STEM lessons at primary school
+      </p>
+
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>
+            Das Projekt <strong>INSPIRE</strong> entwickelt ein <strong>KI-gestütztes Diagnosetool</strong>, das 
+            Grundschullehrkräfte dabei unterstützt, fachliche Fehlvorstellungen von Schüler*innen in 
+            <strong>Mathematik und Sachunterricht</strong> frühzeitig zu erkennen und gezielt darauf zu reagieren.
+          </p>
+          <div class="about-highlight">
+            Im Zentrum steht die Analyse offener Schüler*innenantworten mithilfe fortschrittlicher 
+            Verfahren des Natural Language Processing, symbolischer Logik und Reinforcement Learning, 
+            um passgenaue, lehrplankonforme Rückmeldungen zu generieren.
+          </div>
+          <p>
+            Im Gegensatz zu bestehenden Systemen, die meist auf Daten von Erwachsenen oder älteren 
+            Lernenden basieren, arbeitet INSPIRE mit <strong>authentischen Antworten von Volksschulkindern</strong>. 
+            Dadurch wird sichergestellt, dass die sprachlichen Eigenheiten und kindlichen Denkstrategien 
+            adäquat erkannt und didaktisch sinnvoll adressiert werden.
+          </p>
+          <p>
+            Die Entwicklung erfolgt im Rahmen eines <strong>Educational Design-Based Research (EDBR)</strong>-Ansatzes, 
+            der eine enge, iterative Zusammenarbeit mit Lehrpersonen sicherstellt. INSPIRE verbindet 
+            neueste KI-Forschung mit fachdidaktischem Know-how und schafft so ein vertrauenswürdiges, 
+            praxisnahes Diagnosetool für die frühe MINT-Bildung.
+          </p>
+        </div>
+        <div class="about-image reveal">
+          <img src="assets/img/hero-teacher.png" alt="KI-Unterstützung für Lehrkräfte im Volksschulunterricht">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ Challenges Section ═══ -->
+  <section class="work-packages section-padding" id="challenges">
+    <div class="container">
+      <h2 class="section-title reveal">Warum braucht es <span>INSPIRE</span>?</h2>
+      <div class="section-divider"></div>
+      <p class="section-subtitle reveal">
+        Drei zentrale Herausforderungen im MINT-Unterricht der Primarstufe
+      </p>
+
+      <div class="wp-grid" style="grid-template-columns: repeat(3, 1fr);">
+        <div class="wp-card reveal">
+          <div class="wp-icon"><i data-lucide="bar-chart-3" style="width:28px;height:28px;"></i></div>
+          <h3>Große Leistungsunterschiede</h3>
+          <p>Substanzielle Unterschiede im frühen MINT-Verständnis erfordern individuelle Unterstützung — doch die dafür notwendige zeitaufwendige Diagnostik überfordert viele Lehrkräfte.</p>
+        </div>
+        <div class="wp-card reveal">
+          <div class="wp-icon"><i data-lucide="graduation-cap" style="width:28px;height:28px;"></i></div>
+          <h3>Generalist*innen-Ausbildung</h3>
+          <p>Etwa 90% der Volksschullehrkräfte sind als Generalist*innen ausgebildet. Vielen fehlt eine vertiefte fachliche Vorbereitung in Mathematik und Naturwissenschaften.</p>
+        </div>
+        <div class="wp-card reveal">
+          <div class="wp-icon"><i data-lucide="bot" style="width:28px;height:28px;"></i></div>
+          <h3>Ungeeignete KI-Tools</h3>
+          <p>Aktuelle KI-Systeme wie ChatGPT sind kaum mit kindlicher Sprache trainiert, liefern fachlich ungenaue Rückmeldungen und bieten keine fachdidaktisch fundierten Förderempfehlungen.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ Approach Section ═══ -->
+  <section class="about section-padding" id="approach">
+    <div class="container">
+      <h2 class="section-title reveal">Unser <span>Ansatz</span></h2>
+      <div class="section-divider"></div>
+      <p class="section-subtitle reveal">
+        Innovative KI-Methoden kombiniert mit fachdidaktischer Expertise
+      </p>
+
+      <div class="wp-grid" style="grid-template-columns: repeat(2, 1fr);">
+        <div class="wp-card reveal">
+          <div class="wp-icon"><i data-lucide="search" style="width:28px;height:28px;"></i></div>
+          <h3>Retrieval-Augmented Generation (RAG)</h3>
+          <p>Faktenbasierte Generierung durch Anbindung an validierte Unterrichtsmaterialien und lehrplankonforme Inhalte. Die KI-Ausgabe ist stets fachdidaktisch fundiert.</p>
+        </div>
+        <div class="wp-card reveal">
+          <div class="wp-icon"><i data-lucide="brain" style="width:28px;height:28px;"></i></div>
+          <h3>Chain-of-Thought Prompting</h3>
+          <p>Nachvollziehbare, schrittweise Argumentation ermöglicht transparente Diagnosen. Lehrkräfte können den Denkprozess der KI verstehen und einordnen.</p>
+        </div>
+        <div class="wp-card reveal">
+          <div class="wp-icon"><i data-lucide="repeat" style="width:28px;height:28px;"></i></div>
+          <h3>Reinforcement Learning</h3>
+          <p>Personalisierung der Rückmeldungen durch Anpassung an Lernprofile, Nutzungsmuster und Lehrkraft-Feedback. Das System verbessert sich kontinuierlich.</p>
+        </div>
+        <div class="wp-card reveal">
+          <div class="wp-icon"><i data-lucide="calculator" style="width:28px;height:28px;"></i></div>
+          <h3>Symbolische Verifikation</h3>
+          <p>Mathematische Berechnungen und logische Schlüsse werden durch externe Engines (z.B. Mathematica) überprüft — für höchste fachliche Korrektheit.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ Benefits Section ═══ -->
+  <section class="work-packages section-padding" id="benefits">
+    <div class="container">
+      <h2 class="section-title reveal">Was bringt INSPIRE <span>konkret</span>?</h2>
+      <div class="section-divider"></div>
+      <p class="section-subtitle reveal">
+        Nutzen für Lehrkräfte, Schüler*innen und das Bildungssystem
+      </p>
+
+      <div class="wp-grid" style="grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));">
+        <div class="wp-card reveal">
+          <div class="wp-icon"><i data-lucide="clock" style="width:28px;height:28px;"></i></div>
+          <h3>Zeit sparen</h3>
+          <p>Effizientere Diagnostik im Unterrichtsalltag durch KI-gestützte Analyse offener Schüler*innenantworten.</p>
+        </div>
+        <div class="wp-card reveal">
+          <div class="wp-icon"><i data-lucide="target" style="width:28px;height:28px;"></i></div>
+          <h3>Gezielter fördern</h3>
+          <p>Passgenaue Förderempfehlungen basierend auf erkannten Fehlvorstellungen und Denkstrategien.</p>
+        </div>
+        <div class="wp-card reveal">
+          <div class="wp-icon"><i data-lucide="shield-check" style="width:28px;height:28px;"></i></div>
+          <h3>Fachliche Sicherheit</h3>
+          <p>Validierte Rückmeldungen erhöhen die fachliche Sicherheit, besonders bei Generalist*innen.</p>
+        </div>
+        <div class="wp-card reveal">
+          <div class="wp-icon"><i data-lucide="eye" style="width:28px;height:28px;"></i></div>
+          <h3>Einblick in Denkweisen</h3>
+          <p>Vertieftes Verständnis für kindliche Denkstrategien und typische Fehlkonzepte in MINT.</p>
+        </div>
+        <div class="wp-card reveal">
+          <div class="wp-icon"><i data-lucide="heart-handshake" style="width:28px;height:28px;"></i></div>
+          <h3>Unterstützung, nicht Kontrolle</h3>
+          <p>Die Lehrperson bleibt zentral — die KI unterstützt im Hintergrund bei Diagnose und Förderung.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ Work Packages ═══ -->
+  <section class="about section-padding" id="workpackages">
+    <div class="container">
+      <h2 class="section-title reveal">Die <span>Arbeitspakete</span></h2>
+      <div class="section-divider"></div>
+      <p class="section-subtitle reveal">
+        Fünf eng verzahnte Arbeitspakete bilden das Rückgrat des INSPIRE-Projekts
+      </p>
+
+      <div class="wp-grid">
+        <!-- WP1 -->
+        <div class="wp-card reveal">
+          <span class="wp-number">AP 1</span>
+          <div class="wp-icon"><i data-lucide="book-open" style="width:28px;height:28px;"></i></div>
+          <h3>Fachdidaktische Grundlagen</h3>
+          <p>Aufbau einer validierten Datenbank aus Aufgaben, Schüler*innenantworten, Expert*innen-Feedback und Förderempfehlungen als Grundlage für die KI-Entwicklung.</p>
+          <p style="font-size:.78rem;color:var(--teal-dark);margin-top:10px;font-weight:600;">Leitung: PHS · Okt. 2025 – Jul. 2027</p>
+        </div>
+        <!-- WP2 -->
+        <div class="wp-card reveal">
+          <span class="wp-number">AP 2</span>
+          <div class="wp-icon"><i data-lucide="cpu" style="width:28px;height:28px;"></i></div>
+          <h3>KI-Tool-Entwicklung</h3>
+          <p>Technische Entwicklung des KI-basierten Diagnose- und Fördertools mit NLP, RAG, Chain-of-Thought Prompting und Reinforcement Learning.</p>
+          <p style="font-size:.78rem;color:var(--teal-dark);margin-top:10px;font-weight:600;">Leitung: PLUS · Okt. 2025 – Sep. 2028</p>
+        </div>
+        <!-- WP3 -->
+        <div class="wp-card reveal">
+          <span class="wp-number">AP 3</span>
+          <div class="wp-icon"><i data-lucide="check-circle" style="width:28px;height:28px;"></i></div>
+          <h3>Qualitätssicherung</h3>
+          <p>Kontinuierliche fachdidaktische und fachliche Evaluation der KI-Ausgaben durch Expert*innen und ein internationales Advisory Board.</p>
+          <p style="font-size:.78rem;color:var(--teal-dark);margin-top:10px;font-weight:600;">Leitung: PHS · Okt. 2025 – Mär. 2028</p>
+        </div>
+        <!-- WP4 -->
+        <div class="wp-card reveal">
+          <span class="wp-number">AP 4</span>
+          <div class="wp-icon"><i data-lucide="users" style="width:28px;height:28px;"></i></div>
+          <h3>Lehrer*innen-Professionalisierung</h3>
+          <p>Integration des KI-Tools in die Aus-, Fort- und Weiterbildung von Volksschullehrer*innen. Entwicklung eines modularen Bildungsprogramms.</p>
+          <p style="font-size:.78rem;color:var(--teal-dark);margin-top:10px;font-weight:600;">Leitung: PHS · Okt. 2025 – Sep. 2028</p>
+        </div>
+        <!-- WP5 -->
+        <div class="wp-card reveal">
+          <span class="wp-number">AP 5</span>
+          <div class="wp-icon"><i data-lucide="megaphone" style="width:28px;height:28px;"></i></div>
+          <h3>Management &amp; Dissemination</h3>
+          <p>Projektsteuerung, öffentliche Homepage, wissenschaftliche Publikationen, Pressearbeit und Wissenstransfer in Bildung und Öffentlichkeit.</p>
+          <p style="font-size:.78rem;color:var(--teal-dark);margin-top:10px;font-weight:600;">Leitung: PHS · Okt. 2025 – Sep. 2028</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ Team ═══ -->
+  <section class="partners section-padding" id="team">
+    <div class="container">
+      <h2 class="section-title reveal">Das <span>Projektteam</span></h2>
+      <div class="section-divider"></div>
+      <p class="section-subtitle reveal">
+        Ein interdisziplinäres Team aus Fachdidaktik, KI-Forschung und Schulpraxis
+      </p>
+
+      <div class="team-grid" style="grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 24px;">
+        <!-- Leadership -->
+        <div class="wp-card reveal" style="border-top: 4px solid var(--teal);">
+          <div class="wp-icon"><i data-lucide="crown" style="width:24px;height:24px;"></i></div>
+          <h3>HS-Prof. Dr. habil. Christina Egger</h3>
+          <p style="color:var(--teal-dark);font-weight:600;font-size:.88rem;margin-bottom:8px;">Projektleitung · PHS</p>
+          <p>Stellvertretende Institutsleiterin für Fachdidaktik, MINT-Koordinatorin. Leiterin mehrerer Großprojekte (u.a. EdTechAll).</p>
+        </div>
+
+        <div class="wp-card reveal" style="border-top: 4px solid var(--teal);">
+          <div class="wp-icon"><i data-lucide="crown" style="width:24px;height:24px;"></i></div>
+          <h3>HS-Prof. Dr. Simon Plangg</h3>
+          <p style="color:var(--teal-dark);font-weight:600;font-size:.88rem;margin-bottom:8px;">Projektleitung · PHS</p>
+          <p>Leiter der Mathematik-Sektion, MINT-Koordinator. Erfahren in interdisziplinären Forschungsprojekten (u.a. MAJA).</p>
+        </div>
+
+        <div class="wp-card reveal" style="border-top: 4px solid var(--navy);">
+          <div class="wp-icon"><i data-lucide="brain" style="width:24px;height:24px;"></i></div>
+          <h3>Dipl.-Ing. Dr. Simon Hirländer, BSc</h3>
+          <p style="color:var(--teal-dark);font-weight:600;font-size:.88rem;margin-bottom:8px;">Projektpartner · PLUS / IDA Lab</p>
+          <p>Leiter des Smart Analytics &amp; Reinforcement Learning Teams. Expertise in Trustworthy ML, RL und angewandter KI.</p>
+        </div>
+
+        <!-- Team members -->
+        <div class="wp-card reveal">
+          <div class="wp-icon"><i data-lucide="user" style="width:24px;height:24px;"></i></div>
+          <h3>HS-Prof. Dr. Maria Neubacher</h3>
+          <p style="color:var(--teal-dark);font-weight:600;font-size:.88rem;margin-bottom:8px;">Projektmitarbeiterin · PHS</p>
+          <p>Professorin für Fort- und Weiterbildung. Spezialisiert auf datenbasiertes Lernen und Transferforschung.</p>
+        </div>
+
+        <div class="wp-card reveal">
+          <div class="wp-icon"><i data-lucide="user" style="width:24px;height:24px;"></i></div>
+          <h3>Dr. Marie-Christin Fritz</h3>
+          <p style="color:var(--teal-dark);font-weight:600;font-size:.88rem;margin-bottom:8px;">Projektmitarbeiterin · PHS</p>
+          <p>Zusammenarbeit &amp; Datenerhebung. Expertise in qualitativer Bildungsforschung.</p>
+        </div>
+
+        <div class="wp-card reveal">
+          <div class="wp-icon"><i data-lucide="user" style="width:24px;height:24px;"></i></div>
+          <h3>Markus Dygruber, BSc MEd</h3>
+          <p style="color:var(--teal-dark);font-weight:600;font-size:.88rem;margin-bottom:8px;">Projektmitarbeiter · PHS</p>
+          <p>Forschung und Entwicklung im Bereich fachdidaktische Grundlagen und KI-Tool-Evaluation.</p>
+        </div>
+
+        <div class="wp-card reveal">
+          <div class="wp-icon"><i data-lucide="user" style="width:24px;height:24px;"></i></div>
+          <h3>Olga Mironova, MSc</h3>
+          <p style="color:var(--teal-dark);font-weight:600;font-size:.88rem;margin-bottom:8px;">Projektmitarbeiterin · PLUS / IDA Lab</p>
+          <p>KI-Entwicklung, Machine Learning und technische Umsetzung des Diagnosetools.</p>
+        </div>
+
+        <div class="wp-card reveal">
+          <div class="wp-icon"><i data-lucide="user" style="width:24px;height:24px;"></i></div>
+          <h3>Andrea Spitzwieser, MEd</h3>
+          <p style="color:var(--teal-dark);font-weight:600;font-size:.88rem;margin-bottom:8px;">Projektmitarbeiterin · PHS</p>
+          <p>Zusammenarbeit mit Schulstandorten und Koordination der Datenerhebung.</p>
+        </div>
+
+        <div class="wp-card reveal">
+          <div class="wp-icon"><i data-lucide="user" style="width:24px;height:24px;"></i></div>
+          <h3>Bianca Wieser, MEd</h3>
+          <p style="color:var(--teal-dark);font-weight:600;font-size:.88rem;margin-bottom:8px;">Projektmitarbeiterin · PHS</p>
+          <p>Zusammenarbeit mit Schulstandorten und Qualitätssicherung der didaktischen Inhalte.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ Partners ═══ -->
+  <section class="work-packages section-padding" id="partners">
+    <div class="container">
+      <h2 class="section-title reveal"><span>Partner</span> &amp; Schulen</h2>
+      <div class="section-divider"></div>
+      <p class="section-subtitle reveal">
+        Ein starkes Konsortium aus Forschung, Praxis und Innovation
+      </p>
+
+      <div class="partner-grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
+        <!-- PHS -->
+        <div class="partner-card reveal">
+          <div class="partner-logo-wrap">
+            <svg viewBox="0 0 260 60" style="width:220px">
+              <text x="10" y="28" font-family="Outfit,sans-serif" font-weight="700" font-size="16" fill="#223c5a">Pädagogische Hochschule</text>
+              <text x="10" y="50" font-family="Outfit,sans-serif" font-weight="600" font-size="16" fill="#3db8b5">Salzburg Stefan Zweig</text>
+            </svg>
+          </div>
+          <h3>PH Salzburg Stefan Zweig</h3>
+          <div class="partner-role">Konsortialführer</div>
+          <p>Projektleitung und fachdidaktische Expertise in KI-Unterstützung für Lehrkräfte im Volksschulunterricht.</p>
+        </div>
+
+        <!-- PLUS -->
+        <div class="partner-card reveal">
+          <div class="partner-logo-wrap">
+            <svg viewBox="0 0 200 60" style="width:180px">
+              <text x="10" y="28" font-family="Outfit,sans-serif" font-weight="700" font-size="16" fill="#223c5a">Paris Lodron</text>
+              <text x="10" y="48" font-family="Outfit,sans-serif" font-weight="600" font-size="16" fill="#3db8b5">Universität Salzburg</text>
+            </svg>
+          </div>
+          <h3>PLUS — IDA Lab</h3>
+          <div class="partner-role">Projektpartner · KI-Entwicklung</div>
+          <p>Intelligent Data Analytics Lab. Expertise in Machine Learning, Reinforcement Learning und angewandter KI.</p>
+        </div>
+
+        <!-- EdTech Austria -->
+        <div class="partner-card reveal">
+          <div class="partner-logo-wrap">
+            <svg viewBox="0 0 200 60" style="width:180px">
+              <text x="10" y="38" font-family="Outfit,sans-serif" font-weight="700" font-size="22" fill="#223c5a">EdTech</text>
+              <text x="115" y="38" font-family="Outfit,sans-serif" font-weight="700" font-size="22" fill="#3db8b5">Austria</text>
+            </svg>
+          </div>
+          <h3>EdTech Austria</h3>
+          <div class="partner-role">Assoziierter Partner</div>
+          <p>Plattform für Bildungstechnologie-Innovation in Österreich.</p>
+        </div>
+
+        <!-- Innovation Salzburg -->
+        <div class="partner-card reveal">
+          <div class="partner-logo-wrap">
+            <svg viewBox="0 0 220 60" style="width:200px">
+              <text x="10" y="38" font-family="Outfit,sans-serif" font-weight="700" font-size="18" fill="#223c5a">Innovation</text>
+              <text x="140" y="38" font-family="Outfit,sans-serif" font-weight="600" font-size="18" fill="#3db8b5">Salzburg</text>
+            </svg>
+          </div>
+          <h3>Innovation Salzburg</h3>
+          <div class="partner-role">Assoziierter Partner</div>
+          <p>Unterstützung bei Innovation und Transfer in der Region Salzburg.</p>
+        </div>
+
+        <!-- ExtensityAI -->
+        <div class="partner-card reveal">
+          <div class="partner-logo-wrap">
+            <svg viewBox="0 0 200 60" style="width:180px">
+              <text x="10" y="38" font-family="Outfit,sans-serif" font-weight="700" font-size="22" fill="#223c5a">Extensity</text>
+              <text x="130" y="38" font-family="Outfit,sans-serif" font-weight="700" font-size="22" fill="#3db8b5">AI</text>
+            </svg>
+          </div>
+          <h3>ExtensityAI</h3>
+          <div class="partner-role">Assoziierter Partner</div>
+          <p>Technologiepartner für skalierbare Machine-Learning-Lösungen.</p>
+        </div>
+      </div>
+
+      <!-- Schools -->
+      <h3 class="section-title reveal" style="font-size:1.6rem; margin-top:60px;">Projekt-<span>Schulen</span></h3>
+      <div class="section-divider"></div>
+      <div class="wp-grid reveal" style="grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); margin-top:30px;">
+        <div class="wp-card">
+          <div class="wp-icon"><i data-lucide="school" style="width:24px;height:24px;"></i></div>
+          <h3>VS Oberalm</h3>
+          <p>Volksschule Oberalm</p>
+        </div>
+        <div class="wp-card">
+          <div class="wp-icon"><i data-lucide="school" style="width:24px;height:24px;"></i></div>
+          <h3>Praxis-VS Salzburg</h3>
+          <p>Praxisvolksschule Salzburg</p>
+        </div>
+        <div class="wp-card">
+          <div class="wp-icon"><i data-lucide="school" style="width:24px;height:24px;"></i></div>
+          <h3>VS St. Johann am Dom</h3>
+          <p>Volksschule St. Johann am Dom</p>
+        </div>
+        <div class="wp-card">
+          <div class="wp-icon"><i data-lucide="school" style="width:24px;height:24px;"></i></div>
+          <h3>VS Bad Gastein</h3>
+          <p>Volksschule Bad Gastein</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ Data Collection Topics ═══ -->
+  <section class="about section-padding" id="data">
+    <div class="container">
+      <h2 class="section-title reveal">Thematische <span>Schwerpunkte</span></h2>
+      <div class="section-divider"></div>
+      <p class="section-subtitle reveal">
+        Zwei zentrale Inhaltsbereiche bilden die Datengrundlage für das KI-Tool
+      </p>
+
+      <div class="wp-grid" style="grid-template-columns: repeat(2, 1fr);">
+        <div class="wp-card reveal" style="border-top: 4px solid var(--teal);">
+          <div class="wp-icon"><i data-lucide="flask-conical" style="width:28px;height:28px;"></i></div>
+          <h3>Schwimmen und Sinken</h3>
+          <p style="color:var(--teal-dark);font-weight:600;font-size:.88rem;margin-bottom:8px;">Sachunterricht</p>
+          <p>Analyse von Präkonzepten und Fehlvorstellungen zu naturwissenschaftlichen Phänomenen. Kinder beschreiben ihre Beobachtungen und Erklärungsmodelle zu Konzepten wie Kondensation, Feuchtigkeit und Temperaturänderungen.</p>
+        </div>
+        <div class="wp-card reveal" style="border-top: 4px solid var(--teal);">
+          <div class="wp-icon"><i data-lucide="ruler" style="width:28px;height:28px;"></i></div>
+          <h3>Größen und Messen</h3>
+          <p style="color:var(--teal-dark);font-weight:600;font-size:.88rem;margin-bottom:8px;">Mathematik</p>
+          <p>Untersuchung von Größenvorstellungen und Messkonzepten, z.B. Hohlmaße. Fokus auf kindliche Denkstrategien und typische Fehlkonzepte beim Umgang mit Maßeinheiten.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ Timeline ═══ -->
+  <section class="timeline-section section-padding" id="timeline">
+    <div class="container">
+      <h2 class="section-title reveal">Projekt-<span>Zeitplan</span></h2>
+      <div class="section-divider"></div>
+      <p class="section-subtitle reveal">
+        Drei Jahre iterative Entwicklung im EDBR-Ansatz
+      </p>
+
+      <div class="timeline">
+        <div class="timeline-item reveal">
+          <div class="timeline-content">
+            <div class="timeline-date">Okt. 2025</div>
+            <h3>Projektstart &amp; Kick-off</h3>
+            <p>Einrichtung der Kollaborationsplattform, Kick-off-Workshop mit allen Schulstandorten, Start der Anforderungsanalyse.</p>
+          </div>
+          <div class="timeline-dot"></div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-content">
+            <div class="timeline-date">Dez. 2025</div>
+            <h3>Projekt-Homepage online</h3>
+            <p>Launch der öffentlichen Projektwebsite mit Informationen für Schulen, Forschung und Stakeholder.</p>
+          </div>
+          <div class="timeline-dot"></div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-content">
+            <div class="timeline-date">2025–2027</div>
+            <h3>Datenerhebung &amp; EDBR-Zyklen</h3>
+            <p>Prä-Pilotierung in 4. Klassen, iterative Aufgabenentwicklung, Sammlung von Schüler*innenantworten und Expert*innen-Feedback. Aufbau der fachdidaktischen Datenbank.</p>
+          </div>
+          <div class="timeline-dot"></div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-content">
+            <div class="timeline-date">2026–2027</div>
+            <h3>KI-Entwicklung &amp; Prototyp</h3>
+            <p>Auswahl und Validierung der ML-Baseline-Modelle. Aufbau der hybriden KI-Architektur mit RAG und symbolischen Methoden. Erste Trainings und Tests.</p>
+          </div>
+          <div class="timeline-dot"></div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-content">
+            <div class="timeline-date">Mär. 2027</div>
+            <h3>Advisory Board &amp; Evaluation</h3>
+            <p>Einrichtung des internationalen Advisory Boards. Erste Evaluationsberichte zu KI-Prototypen. Optimierungsempfehlungen für die nächste Iteration.</p>
+          </div>
+          <div class="timeline-dot"></div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-content">
+            <div class="timeline-date">2028</div>
+            <h3>Pilotierung &amp; Transfer</h3>
+            <p>RL-basiertes Empfehlungssystem. Pilotierung des FWB-Programms. Mixed-Methods-Evaluation. Wissenschaftliche Publikationen und Abschlussbericht.</p>
+          </div>
+          <div class="timeline-dot"></div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-content">
+            <div class="timeline-date">Sep. 2028</div>
+            <h3>Projektabschluss</h3>
+            <p>Finales KI-Tool bereit für den Einsatz. Transfer in die Lehrerbildung. Open-Source-Dissemination und Abschlusssymposium.</p>
+          </div>
+          <div class="timeline-dot"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ CTA / Contact ═══ -->
+  <section class="cta-section section-padding" id="contact">
+    <div class="container cta-content">
+      <h2 class="section-title reveal">Interesse an <span>INSPIRE</span>?</h2>
+      <div class="section-divider"></div>
+      <p class="section-subtitle reveal">
+        Wir freuen uns über den Austausch mit Lehrkräften, Schulen, Forschenden und Bildungseinrichtungen
+      </p>
+      <div class="cta-buttons reveal">
+        <a href="mailto:christina.egger@phsalzburg.at" class="btn-cta-primary">
+          <i data-lucide="mail" style="width:18px;height:18px;display:inline-block;vertical-align:middle;margin-right:8px;"></i>
+          E-Mail senden
+        </a>
+        <a href="https://idalab.at/en/" target="_blank" rel="noopener" class="btn-cta-outline">
+          <i data-lucide="external-link" style="width:18px;height:18px;display:inline-block;vertical-align:middle;margin-right:8px;"></i>
+          IDA Lab besuchen
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ Footer ═══ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="assets/img/logo-inspire.svg" alt="INSPIRE">
+          <p>
+            INSPIRE — Intelligent Novel Support for Personalized Instruction and Robust Evaluation 
+            in STEM lessons at primary school. Ein Forschungsprojekt gefördert durch das Land Salzburg 
+            im Rahmen des WISS-Programms (Bildung &amp; Talente / ICT-Digital).
+          </p>
+        </div>
+        <div>
+          <h4>Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="#home">Startseite</a></li>
+            <li><a href="#about">Über INSPIRE</a></li>
+            <li><a href="#workpackages">Arbeitspakete</a></li>
+            <li><a href="#team">Projektteam</a></li>
+            <li><a href="#partners">Partner &amp; Schulen</a></li>
+            <li><a href="#timeline">Zeitplan</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Kontakt</h4>
+          <ul class="footer-links">
+            <li><a href="https://www.phsalzburg.at/" target="_blank">PH Salzburg Stefan Zweig</a></li>
+            <li><a href="https://idalab.at/en/" target="_blank">IDA Lab, PLUS Salzburg</a></li>
+            <li><a href="https://www.plus.ac.at/" target="_blank">Universität Salzburg</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2025 INSPIRE Projekt · PHS &amp; PLUS Salzburg</span>
+        <div class="funding">
+          <span>Gefördert durch</span>
+          <span style="color:var(--teal-light);font-weight:600;">Land Salzburg — WISS 2025</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ═══ Scripts ═══ -->
+  <script>
+    // Initialize Lucide Icons
+    lucide.createIcons();
+
+    // ── Sticky Header Shadow ──
+    const header = document.getElementById('header');
+    window.addEventListener('scroll', () => {
+      header.classList.toggle('scrolled', window.scrollY > 10);
+    });
+
+    // ── Hamburger Menu ──
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('navLinks');
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('open');
+      const spans = hamburger.querySelectorAll('span');
+      if (navLinks.classList.contains('open')) {
+        spans[0].style.transform = 'rotate(45deg) translate(5px, 5px)';
+        spans[1].style.opacity = '0';
+        spans[2].style.transform = 'rotate(-45deg) translate(6px, -6px)';
+      } else {
+        spans[0].style.transform = '';
+        spans[1].style.opacity = '';
+        spans[2].style.transform = '';
+      }
+    });
+
+    // ── Active nav link on scroll ──
+    const sections = document.querySelectorAll('section[id]');
+    const navAnchors = document.querySelectorAll('.nav-links a');
+    window.addEventListener('scroll', () => {
+      const scrollY = window.scrollY + 120;
+      sections.forEach(sec => {
+        const top = sec.offsetTop;
+        const height = sec.offsetHeight;
+        const id = sec.getAttribute('id');
+        if (scrollY >= top && scrollY < top + height) {
+          navAnchors.forEach(a => {
+            a.classList.remove('active');
+            if (a.getAttribute('href') === '#' + id) a.classList.add('active');
+          });
+        }
+      });
+    });
+
+    // ── Scroll Reveal Animation ──
+    const revealElements = document.querySelectorAll('.reveal');
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
+
+    revealElements.forEach(el => revealObserver.observe(el));
+
+    // ── Particle Background ──
+    (function() {
+      const canvas = document.getElementById('particles-canvas');
+      if (!canvas) return;
+      const ctx = canvas.getContext('2d');
+      let W, H;
+      const particles = [];
+      const PARTICLE_COUNT = 50;
+
+      function resize() {
+        const hero = canvas.parentElement;
+        W = canvas.width = hero.offsetWidth;
+        H = canvas.height = hero.offsetHeight;
+      }
+
+      function Particle() {
+        this.x = Math.random() * W;
+        this.y = Math.random() * H;
+        this.vx = (Math.random() - .5) * .4;
+        this.vy = (Math.random() - .5) * .4;
+        this.r = Math.random() * 2.5 + 1;
+        this.alpha = Math.random() * .3 + .1;
+      }
+
+      function init() {
+        resize();
+        for (let i = 0; i < PARTICLE_COUNT; i++) particles.push(new Particle());
+      }
+
+      function draw() {
+        ctx.clearRect(0, 0, W, H);
+        particles.forEach((p, i) => {
+          p.x += p.vx; p.y += p.vy;
+          if (p.x < 0 || p.x > W) p.vx *= -1;
+          if (p.y < 0 || p.y > H) p.vy *= -1;
+          ctx.beginPath();
+          ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+          ctx.fillStyle = `rgba(61,184,181,${p.alpha})`;
+          ctx.fill();
+          for (let j = i + 1; j < particles.length; j++) {
+            const dx = p.x - particles[j].x, dy = p.y - particles[j].y;
+            const dist = Math.sqrt(dx * dx + dy * dy);
+            if (dist < 150) {
+              ctx.beginPath();
+              ctx.moveTo(p.x, p.y);
+              ctx.lineTo(particles[j].x, particles[j].y);
+              ctx.strokeStyle = `rgba(61,184,181,${.08 * (1 - dist / 150)})`;
+              ctx.lineWidth = 1;
+              ctx.stroke();
+            }
+          }
+        });
+        requestAnimationFrame(draw);
+      }
+
+      window.addEventListener('resize', resize);
+      init();
+      draw();
+    })();
+
+    // ── Smooth scroll for nav links ──
+    document.querySelectorAll('a[href^="#"]').forEach(link => {
+      link.addEventListener('click', e => {
+        e.preventDefault();
+        const target = document.querySelector(link.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth' });
+          navLinks.classList.remove('open');
+          const spans = hamburger.querySelectorAll('span');
+          spans[0].style.transform = '';
+          spans[1].style.opacity = '';
+          spans[2].style.transform = '';
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>
