@@ -11,16 +11,15 @@
 </head>
 <body>
 
-  <!-- ═══ Announcement Bar ═══ -->
-  <div class="announcement-bar">
-    <strong>🎓 WISS-Projekt:</strong> Gefördert durch das Land Salzburg — Schwerpunkt Bildung &amp; Talente / ICT-Digital
-  </div>
+
+
 
   <!-- ═══ Header ═══ -->
   <header class="header" id="header">
     <nav class="nav container">
-      <a href="#" class="nav-logo">
-        <img src="assets/img/logo-inspire.svg" alt="INSPIRE Logo">
+      <a href="#" class="nav-logo" style="display:flex;align-items:center;gap:8px;">
+        <img src="assets/img/logo-icon.svg" alt="INSPIRE Logo" style="height:36px;">
+        <span style="font-family:'Outfit',sans-serif;font-weight:700;font-size:1.25rem;color:var(--navy);letter-spacing:.02em;">INSPIRE</span>
       </a>
       <ul class="nav-links" id="navLinks">
         <li><a href="#home" class="active">Startseite</a></li>
@@ -351,14 +350,14 @@
           <p>Leiter der Mathematik-Sektion, MINT-Koordinator. Erfahren in interdisziplinären Forschungsprojekten (u.a. MAJA).</p>
         </div>
 
-        <div class="wp-card reveal">
+        <div class="wp-card reveal" style="border-top: 4px solid var(--teal);">
           <div class="wp-icon"><i data-lucide="user" style="width:24px;height:24px;"></i></div>
           <h3>HS-Prof. Dr. Maria Neubacher</h3>
           <p style="color:var(--teal-dark);font-weight:600;font-size:.88rem;margin-bottom:8px;">Projektmitarbeiterin · PHS</p>
           <p>Professorin für Fort- und Weiterbildung. Spezialisiert auf datenbasiertes Lernen und Transferforschung.</p>
         </div>
 
-        <div class="wp-card reveal">
+        <div class="wp-card reveal" style="border-top: 4px solid var(--teal);">
           <div class="wp-icon"><i data-lucide="user" style="width:24px;height:24px;"></i></div>
           <h3>Dr. Marie-Christin Fritz</h3>
           <p style="color:var(--teal-dark);font-weight:600;font-size:.88rem;margin-bottom:8px;">Projektmitarbeiterin · PHS</p>
@@ -366,14 +365,14 @@
         </div>
 
 
-        <div class="wp-card reveal">
+        <div class="wp-card reveal" style="border-top: 4px solid var(--teal);">
           <div class="wp-icon"><i data-lucide="user" style="width:24px;height:24px;"></i></div>
           <h3>Andrea Spitzwieser, MEd</h3>
           <p style="color:var(--teal-dark);font-weight:600;font-size:.88rem;margin-bottom:8px;">Projektmitarbeiterin · PHS</p>
           <p>Zusammenarbeit mit Schulstandorten und Koordination der Datenerhebung.</p>
         </div>
 
-        <div class="wp-card reveal">
+        <div class="wp-card reveal" style="border-top: 4px solid var(--teal);">
           <div class="wp-icon"><i data-lucide="user" style="width:24px;height:24px;"></i></div>
           <h3>Bianca Wieser, MEd</h3>
           <p style="color:var(--teal-dark);font-weight:600;font-size:.88rem;margin-bottom:8px;">Projektmitarbeiterin · PHS</p>
@@ -389,99 +388,111 @@
       <h2 class="section-title reveal"><span>Partner</span> &amp; Schulen</h2>
       <div class="section-divider"></div>
       <p class="section-subtitle reveal">
-        Ein starkes Konsortium aus Forschung, Praxis und Innovation
+        Ein starkes Konsortium aus Forschung und Schulpraxis
       </p>
 
       <div class="partner-grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
-        <!-- PHS -->
-        <div class="partner-card reveal">
+        <!-- PLUS / IDA Lab -->
+        <a href="https://idalab.at/" target="_blank" rel="noopener" class="partner-card reveal" style="text-decoration:none;color:inherit;">
           <div class="partner-logo-wrap">
-            <svg viewBox="0 0 260 60" style="width:220px">
-              <text x="10" y="28" font-family="Outfit,sans-serif" font-weight="700" font-size="16" fill="#223c5a">Pädagogische Hochschule</text>
-              <text x="10" y="50" font-family="Outfit,sans-serif" font-weight="600" font-size="16" fill="#3db8b5">Salzburg Stefan Zweig</text>
-            </svg>
-          </div>
-          <h3>PH Salzburg Stefan Zweig</h3>
-          <div class="partner-role">Konsortialführer</div>
-          <p>Projektleitung und fachdidaktische Expertise in KI-Unterstützung für Lehrkräfte im Volksschulunterricht.</p>
-        </div>
-
-        <!-- PLUS -->
-        <div class="partner-card reveal">
-          <div class="partner-logo-wrap">
-            <svg viewBox="0 0 200 60" style="width:180px">
-              <text x="10" y="28" font-family="Outfit,sans-serif" font-weight="700" font-size="16" fill="#223c5a">Paris Lodron</text>
-              <text x="10" y="48" font-family="Outfit,sans-serif" font-weight="600" font-size="16" fill="#3db8b5">Universität Salzburg</text>
-            </svg>
+            <img src="assets/img/IDA Logo High.png" alt="IDA Lab Logo" style="height:70px;object-fit:contain;">
           </div>
           <h3>PLUS — IDA Lab</h3>
           <div class="partner-role">Projektpartner · KI-Entwicklung</div>
           <p>Intelligent Data Analytics Lab. Expertise in Machine Learning, Reinforcement Learning und angewandter KI.</p>
-        </div>
+          <p style="font-size:.78rem;color:var(--teal-dark);margin-top:8px;font-weight:600;">
+            <i data-lucide="external-link" style="width:14px;height:14px;display:inline-block;vertical-align:middle;margin-right:4px;"></i>
+            Website besuchen
+          </p>
+        </a>
 
-        <!-- EdTech Austria -->
-        <div class="partner-card reveal">
+        <!-- PHS -->
+        <a href="https://phsalzburg.at" target="_blank" rel="noopener" class="partner-card reveal" style="text-decoration:none;color:inherit;">
           <div class="partner-logo-wrap">
-            <svg viewBox="0 0 200 60" style="width:180px">
-              <text x="10" y="38" font-family="Outfit,sans-serif" font-weight="700" font-size="22" fill="#223c5a">EdTech</text>
-              <text x="115" y="38" font-family="Outfit,sans-serif" font-weight="700" font-size="22" fill="#3db8b5">Austria</text>
-            </svg>
+            <img src="assets/img/image.png" alt="PH Salzburg Stefan Zweig Logo" style="height:60px;object-fit:contain;">
           </div>
-          <h3>EdTech Austria</h3>
-          <div class="partner-role">Assoziierter Partner</div>
-          <p>Plattform für Bildungstechnologie-Innovation in Österreich.</p>
-        </div>
-
-        <!-- Innovation Salzburg -->
-        <div class="partner-card reveal">
-          <div class="partner-logo-wrap">
-            <svg viewBox="0 0 220 60" style="width:200px">
-              <text x="10" y="38" font-family="Outfit,sans-serif" font-weight="700" font-size="18" fill="#223c5a">Innovation</text>
-              <text x="140" y="38" font-family="Outfit,sans-serif" font-weight="600" font-size="18" fill="#3db8b5">Salzburg</text>
-            </svg>
-          </div>
-          <h3>Innovation Salzburg</h3>
-          <div class="partner-role">Assoziierter Partner</div>
-          <p>Unterstützung bei Innovation und Transfer in der Region Salzburg.</p>
-        </div>
-
-        <!-- ExtensityAI -->
-        <div class="partner-card reveal">
-          <div class="partner-logo-wrap">
-            <svg viewBox="0 0 200 60" style="width:180px">
-              <text x="10" y="38" font-family="Outfit,sans-serif" font-weight="700" font-size="22" fill="#223c5a">Extensity</text>
-              <text x="130" y="38" font-family="Outfit,sans-serif" font-weight="700" font-size="22" fill="#3db8b5">AI</text>
-            </svg>
-          </div>
-          <h3>ExtensityAI</h3>
-          <div class="partner-role">Assoziierter Partner</div>
-          <p>Technologiepartner für skalierbare Machine-Learning-Lösungen.</p>
-        </div>
+          <h3>PH Salzburg Stefan Zweig</h3>
+          <div class="partner-role">Konsortialführer</div>
+          <p>Projektleitung und fachdidaktische Expertise in MINT-Bildung an der Primarstufe.</p>
+          <p style="font-size:.78rem;color:var(--teal-dark);margin-top:8px;font-weight:600;">
+            <i data-lucide="external-link" style="width:14px;height:14px;display:inline-block;vertical-align:middle;margin-right:4px;"></i>
+            Website besuchen
+          </p>
+        </a>
       </div>
 
       <!-- Schools -->
       <h3 class="section-title reveal" style="font-size:1.6rem; margin-top:60px;">Projekt-<span>Schulen</span></h3>
       <div class="section-divider"></div>
       <div class="wp-grid reveal" style="grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); margin-top:30px;">
-        <div class="wp-card">
+        <a href="https://www.vs-oberalm.salzburg.at/" target="_blank" rel="noopener" class="wp-card" style="text-decoration:none;color:inherit;">
           <div class="wp-icon"><i data-lucide="school" style="width:24px;height:24px;"></i></div>
           <h3>VS Oberalm</h3>
           <p>Volksschule Oberalm</p>
-        </div>
-        <div class="wp-card">
+          <p style="font-size:.78rem;color:var(--teal-dark);margin-top:8px;font-weight:600;">
+            <i data-lucide="external-link" style="width:14px;height:14px;display:inline-block;vertical-align:middle;margin-right:4px;"></i>
+            Website besuchen
+          </p>
+        </a>
+        <a href="https://pvs.salzburg.at/" target="_blank" rel="noopener" class="wp-card" style="text-decoration:none;color:inherit;">
           <div class="wp-icon"><i data-lucide="school" style="width:24px;height:24px;"></i></div>
           <h3>Praxis-VS Salzburg</h3>
           <p>Praxisvolksschule Salzburg</p>
-        </div>
-        <div class="wp-card">
+          <p style="font-size:.78rem;color:var(--teal-dark);margin-top:8px;font-weight:600;">
+            <i data-lucide="external-link" style="width:14px;height:14px;display:inline-block;vertical-align:middle;margin-right:4px;"></i>
+            Website besuchen
+          </p>
+        </a>
+        <a href="https://www.vs-st-johann.salzburg.at/" target="_blank" rel="noopener" class="wp-card" style="text-decoration:none;color:inherit;">
           <div class="wp-icon"><i data-lucide="school" style="width:24px;height:24px;"></i></div>
           <h3>VS St. Johann am Dom</h3>
           <p>Volksschule St. Johann am Dom</p>
-        </div>
-        <div class="wp-card">
+          <p style="font-size:.78rem;color:var(--teal-dark);margin-top:8px;font-weight:600;">
+            <i data-lucide="external-link" style="width:14px;height:14px;display:inline-block;vertical-align:middle;margin-right:4px;"></i>
+            Website besuchen
+          </p>
+        </a>
+        <a href="https://volksschule-badgastein.at/" target="_blank" rel="noopener" class="wp-card" style="text-decoration:none;color:inherit;">
           <div class="wp-icon"><i data-lucide="school" style="width:24px;height:24px;"></i></div>
           <h3>VS Bad Gastein</h3>
           <p>Volksschule Bad Gastein</p>
+          <p style="font-size:.78rem;color:var(--teal-dark);margin-top:8px;font-weight:600;">
+            <i data-lucide="external-link" style="width:14px;height:14px;display:inline-block;vertical-align:middle;margin-right:4px;"></i>
+            Website besuchen
+          </p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ Förderung / Sponsor ═══ -->
+  <section class="about section-padding" id="foerderung">
+    <div class="container">
+      <h2 class="section-title reveal">Projekt-<span>Förderung</span></h2>
+      <div class="section-divider"></div>
+
+      <div class="about-grid" style="align-items:center;">
+        <div class="about-text reveal">
+          <p>
+            Das Projekt <strong>INSPIRE</strong> wird im Rahmen des <strong>WISS 2025</strong>-Programms 
+            durch das <strong>Land Salzburg</strong> gefördert — Schwerpunkt <em>Bildung &amp; Talente / ICT-Digital</em>.
+          </p>
+          <div class="about-highlight">
+            Das WISS-Programm (Wissenschafts- und Innovationsstrategie Salzburg 2025) unterstützt 
+            die strategische Weiterentwicklung des Wissenschafts- und Innovationsstandorts Salzburg. 
+            Ziel ist es, durch gezielte Förderung die Zusammenarbeit zwischen Forschung, Bildung und 
+            Praxis zu stärken und innovative Lösungen für gesellschaftliche Herausforderungen zu entwickeln.
+          </div>
+          <p>
+            <strong>Projektlaufzeit:</strong> 01.10.2025 – 30.09.2028<br>
+            <strong>Fördergeber:</strong> Land Salzburg<br>
+            <strong>Förderprogramm:</strong> WISS 2025 — Bildung &amp; Talente / ICT-Digital<br>
+            <strong>Projektnummer:</strong> GZ: 510003/0018-PA-ZV-IKT/202, F2500686
+          </p>
+        </div>
+        <div class="about-image reveal" style="display:flex;flex-direction:column;align-items:center;gap:30px;">
+          <img src="assets/img/image copy 2.png" alt="Land Salzburg Logo" style="max-height:100px;object-fit:contain;">
+          <img src="assets/img/image copy.png" alt="Bildungsdirektion Salzburg Logo" style="max-height:80px;object-fit:contain;">
         </div>
       </div>
     </div>
@@ -525,63 +536,28 @@
       <div class="timeline">
         <div class="timeline-item reveal">
           <div class="timeline-content">
-            <div class="timeline-date">Okt. 2025</div>
-            <h3>Projektstart &amp; Kick-off</h3>
-            <p>Einrichtung der Kollaborationsplattform, Kick-off-Workshop mit allen Schulstandorten, Start der Anforderungsanalyse.</p>
+            <div class="timeline-date">Phase 1</div>
+            <h3>Grundlagen &amp; Datenerhebung</h3>
+            <p>Kick-off, Aufgabenentwicklung &amp; Datenbank-Aufbau.</p>
           </div>
           <div class="timeline-dot"></div>
         </div>
 
         <div class="timeline-item reveal">
           <div class="timeline-content">
-            <div class="timeline-date">Dez. 2025</div>
-            <h3>Projekt-Homepage online</h3>
-            <p>Launch der öffentlichen Projektwebsite mit Informationen für Schulen, Forschung und Stakeholder.</p>
-          </div>
-          <div class="timeline-dot"></div>
-        </div>
-
-        <div class="timeline-item reveal">
-          <div class="timeline-content">
-            <div class="timeline-date">2025–2027</div>
-            <h3>Datenerhebung &amp; EDBR-Zyklen</h3>
-            <p>Prä-Pilotierung in 4. Klassen, iterative Aufgabenentwicklung, Sammlung von Schüler*innenantworten und Expert*innen-Feedback. Aufbau der fachdidaktischen Datenbank.</p>
-          </div>
-          <div class="timeline-dot"></div>
-        </div>
-
-        <div class="timeline-item reveal">
-          <div class="timeline-content">
-            <div class="timeline-date">2026–2027</div>
+            <div class="timeline-date">Phase 2</div>
             <h3>KI-Entwicklung &amp; Prototyp</h3>
-            <p>Auswahl und Validierung der ML-Baseline-Modelle. Aufbau der hybriden KI-Architektur mit RAG und symbolischen Methoden. Erste Trainings und Tests.</p>
+            <p>Modell-Training, Architektur-Design &amp; erste Evaluation.</p>
           </div>
           <div class="timeline-dot"></div>
         </div>
 
         <div class="timeline-item reveal">
           <div class="timeline-content">
-            <div class="timeline-date">Mär. 2027</div>
-            <h3>Advisory Board &amp; Evaluation</h3>
-            <p>Einrichtung des internationalen Advisory Boards. Erste Evaluationsberichte zu KI-Prototypen. Optimierungsempfehlungen für die nächste Iteration.</p>
-          </div>
-          <div class="timeline-dot"></div>
-        </div>
-
-        <div class="timeline-item reveal">
-          <div class="timeline-content">
-            <div class="timeline-date">2028</div>
+            <div class="timeline-date">Phase 3</div>
             <h3>Pilotierung &amp; Transfer</h3>
-            <p>RL-basiertes Empfehlungssystem. Pilotierung des FWB-Programms. Mixed-Methods-Evaluation. Wissenschaftliche Publikationen und Abschlussbericht.</p>
-          </div>
-          <div class="timeline-dot"></div>
-        </div>
-
-        <div class="timeline-item reveal">
-          <div class="timeline-content">
-            <div class="timeline-date">Sep. 2028</div>
-            <h3>Projektabschluss</h3>
-            <p>Finales KI-Tool bereit für den Einsatz. Transfer in die Lehrerbildung. Open-Source-Dissemination und Abschlusssymposium.</p>
+            <p>Empfehlungssystem · Fortbildungsprogramm · Evaluation · Publikationen · Open Source</p>
+            <p style="margin-top:8px;color:var(--teal-dark);font-weight:600;font-size:.85rem;">→ Praxiserprobtes KI-Tool &amp; Transfer in die Lehrerbildung</p>
           </div>
           <div class="timeline-dot"></div>
         </div>
