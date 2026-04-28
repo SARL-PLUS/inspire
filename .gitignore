@@ -1,3 +1,6 @@
+# Confidential project documents — never commit
+Documents/
+
 # Python
 __pycache__/
 *.py[cod]
