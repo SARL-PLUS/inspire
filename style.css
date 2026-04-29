@@ -430,6 +430,14 @@ img { max-width: 100%; height: auto; display: block; }
   gap: 28px;
 }
 
+.wp-grid-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.wp-grid-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
 .wp-card {
   background: var(--white);
   border-radius: var(--radius-lg);
@@ -895,6 +903,10 @@ img { max-width: 100%; height: auto; display: block; }
   }
   .timeline-dot { left: 30px; }
   .timeline-content { width: 100%; }
+  
+  .wp-grid-3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media (max-width: 768px) {
@@ -920,6 +932,29 @@ img { max-width: 100%; height: auto; display: block; }
   .footer-grid { grid-template-columns: 1fr; gap: 30px; }
   .footer-bottom { flex-direction: column; gap: 16px; text-align: center; }
   .cta-buttons { flex-direction: column; align-items: center; }
+
+  .wp-grid-3, .wp-grid-2 {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+  .hero-buttons .btn {
+    width: 100%;
+    justify-content: center;
+  }
+  .hero-stats {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+  }
+  .hero-stat {
+    flex: 1 1 40%;
+  }
 }
 
 /* ───── Particle canvas ───── */
