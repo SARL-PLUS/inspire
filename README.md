@@ -21,7 +21,6 @@ Das Ziel von INSPIRE ist es, Volksschullehrkräfte bei der Identifikation und Ad
 - **Paris Lodron Universität Salzburg (PLUS) / IDA Lab** – Projektpartner (KI-Entwicklung & Machine Learning).
 - **EdTech Austria** – Assoziierter Partner.
 - **Innovation Salzburg** – Assoziierter Partner.
-- **ExtensityAI** – Assoziierter Partner.
 
 ## 🏫 Partnerschulen
 - Volksschule Oberalm
